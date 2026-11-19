@@ -5122,7 +5122,7 @@ p {
 
 .list-kota-section {
     width: 100%;
-    padding: 80px 20px;
+    padding: 40px 20px;
     background: #F7F8FB;
     box-sizing: border-box;
 }
@@ -5362,7 +5362,8 @@ p {
     }
 
     .list-kota-header h2 {
-        font-size: 34px !important;
+        font-family: 'Georgia', serif !important;
+        font-size: 27px !important;
         line-height: 1.4;
         margin-bottom: 12px;
     }

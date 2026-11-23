@@ -4716,6 +4716,7 @@ p {
     }
 }
 
+
 .pengacara-perempuan-section {
     position: relative;
     overflow: hidden;
@@ -4730,9 +4731,9 @@ p {
 .pengacara-perempuan-container {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 35px;
     width: min(1320px, calc(100% - 48px));
     margin: 0 auto;
@@ -4792,6 +4793,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
 }
 
 .pengacara-perempuan-card {
@@ -4829,6 +4831,10 @@ p {
     background: #c18a2b;
 }
 
+.pengacara-perempuan-card-content {
+    min-width: 0;
+}
+
 .pengacara-perempuan-card-content h3 {
     margin: 0 0 6px;
     color: #102544;
@@ -4845,10 +4851,8 @@ p {
     line-height: 1.45;
 }
 
-.pengacara-perempuan-visual {
-    min-height: 650px;
-    background: url("../images/background-pengacara-perempuan.png")
-        right center / contain no-repeat;
+.pengacara-perempuan-features > p {
+    margin: 8px 0 0;
 }
 
 /* Tablet */
@@ -4858,12 +4862,8 @@ p {
     }
 
     .pengacara-perempuan-container {
-        grid-template-columns: 1fr;
         width: min(900px, calc(100% - 40px));
-    }
-
-    .pengacara-perempuan-visual {
-        display: none;
+        gap: 28px;
     }
 
     .pengacara-perempuan-content > h2 {
@@ -4880,6 +4880,7 @@ p {
 
     .pengacara-perempuan-container {
         width: calc(100% - 32px);
+        gap: 24px;
     }
 
     .pengacara-perempuan-label {
@@ -4935,8 +4936,12 @@ p {
         font-size: 14px !important;
         line-height: 1.5;
     }
-}
 
+    .pengacara-perempuan-features > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
 
 .jlc-cta-button-center {
     display: flex;

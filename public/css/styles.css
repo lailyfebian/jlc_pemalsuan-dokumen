@@ -409,7 +409,6 @@ p {
 }
 
 .hero-content h1 span {
-    display: block;
     color: var(--secondary);
 }
 
@@ -1255,11 +1254,11 @@ p {
         padding: 8px 15px;
     }
 
-    .hero-content h1 {
+   /* .hero-content h1 {
         font-size: 32px !important;
         line-height: 1.15;
         margin-bottom: 20px;
-    }
+    }*/
 
     .hero-content p {
         font-size: 14px;
@@ -1452,7 +1451,7 @@ p {
     }
 
     .about-title {
-        font-size: 28px;
+        font-size: 28px !important;
         line-height: 1.25;
         margin-bottom: 20px;
     }
@@ -1903,7 +1902,7 @@ p {
 .choose-heading {
     margin-bottom: 24px;
     color: #132645;
-    font-size: 42px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
 }
@@ -3062,13 +3061,6 @@ p {
     overflow: hidden;
 }
 
-.team-section-2 {
-    position: relative;
-    padding: 70px 0;
-    background: #fbfbfc;
-    overflow: hidden;
-}
-
 .team-section-2::before {
     content: "";
     position: absolute;
@@ -3124,7 +3116,7 @@ p {
     margin-top: 20px;
     margin-bottom: 22px;
     color: #14213d;
-    font-size: 64px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
 }
@@ -3137,7 +3129,7 @@ p {
     max-width: 850px;
     margin: 0 auto;
     color: #4d596a;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.8;
 }
 
@@ -3326,7 +3318,7 @@ p {
     }
 
     .team-section-2-subtitle {
-        font-size: 13px;
+        font-size: 11px;
         letter-spacing: 2px;
     }
 
@@ -3336,11 +3328,15 @@ p {
     }
 
     .team-section-2-title {
-        font-size: 38px;
+        font-size: 28px !important;
+    }
+
+    .team-section-2-title span {
+        font-size: 28px !important;
     }
 
     .team-section-2-description {
-        font-size: 18px;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -3366,10 +3362,10 @@ p {
         font-size: 32px;
     }
 
-    .team-section-2-description {
+    /*.team-section-2-description {
         font-size: 16px;
     }
-
+*/
     .team-section-2-content .team-name {
         font-size: 19px;
     }
@@ -3387,7 +3383,6 @@ p {
         transition: none;
     }
 }
-
 
 .cta-section-2 {
     position: relative;
@@ -3675,7 +3670,7 @@ p {
     }
 
     .cta-section-2-title {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .cta-section-2-subtitle {
@@ -3720,10 +3715,10 @@ p {
         padding: 25px 18px;
     }
 
-    .cta-section-2-title {
+   /* .cta-section-2-title {
         font-size: 30px;
     }
-
+*/
     .cta-section-2-subtitle {
         font-size: 17px;
     }
@@ -5049,7 +5044,7 @@ p {
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
     color: #102544 !important;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; display: block;
     color: #c58a20;
@@ -5058,7 +5053,7 @@ p {
 .list-kota-header h2 span{
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
-    font-size: clamp(36px, 4.5vw, 62px);
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; 
     display: block;
@@ -5071,7 +5066,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0 auto 12px;
     color: #727272;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.8;
 }
@@ -5115,7 +5110,7 @@ p {
     border: 1px solid #E9EDF3;
     border-radius: 8px;
     color: #102544 !important;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 500;
     line-height: 1.5;
     text-decoration: none !important;
@@ -5175,7 +5170,7 @@ p {
     font-family: 'Inter', serif !important;
     margin: 0;
     color: #526176;
-    font-size: 17px !important;
+    font-size: 16px !important;
     font-weight: 400;
     line-height: 1.7;
     text-align: center;
@@ -5230,7 +5225,7 @@ p {
 
     .list-kota-header h2 {
         font-family: 'Georgia', serif !important;
-        font-size: 27px !important;
+        font-size: 28px !important;
         line-height: 1.4;
         margin-bottom: 12px;
     }
@@ -5312,6 +5307,26 @@ p {
         padding: 9px 7px;
         font-size: 10px !important;
     }
+}
+.jlc-cta-button-center {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto 0;
+    padding: 18px 30px;
+
+    background: linear-gradient(135deg, #e1b04d, #c7922d);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 14px;
+
+    position: relative;
+    overflow: hidden;
+    transition: .35s ease;
 }
 
 /* Section button WA */
